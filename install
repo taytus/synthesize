@@ -47,10 +47,7 @@ if [ -z $GRAPHITE_RELEASE ]; then
 fi
 
 
-if [[ -d $GRAPHITE_HOME ]]; then
-  echo "Looks like you already have a Graphite installation in ${GRAPHITE_HOME}, aborting."
-  exit 1
-fi
+
 
 # Update apt since the vagrant image might be old
 apt-get update -y
