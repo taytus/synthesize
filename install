@@ -46,10 +46,7 @@ if [ -z $GRAPHITE_RELEASE ]; then
     GRAPHITE_RELEASE='1.0.2'
 fi
 
-if [[ ! $UBUNTU_RELEASE =~ 'Ubuntu 14.04' ]]; then
-  echo "Sorry, this is only supported for Ubuntu Linux 14.04."
-  exit 1
-fi
+
 if [[ -d $GRAPHITE_HOME ]]; then
   echo "Looks like you already have a Graphite installation in ${GRAPHITE_HOME}, aborting."
   exit 1
